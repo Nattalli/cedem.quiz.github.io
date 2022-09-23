@@ -22,7 +22,7 @@ body {
 	body {
 		background-image: url("page_1.png");
 		background-attachment: fixed;
-		overflow: scroll;
+		background-repeat: no-repeat;
 	}
 }
 
