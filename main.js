@@ -492,9 +492,9 @@ function showResults() {
 	<div class="second-result-additional">
 	<div class="result-text-final">%message%</div>
 	<div class="result-additional">Ось як усе буде 👇</div>
-	<video class="video" controls="controls" poster="">
-	   <source src="" type='video/ogg; codecs="theora, vorbis"'>
-	</video>
+	<iframe class="video" src="https://www.youtube.com/embed/nTFWIeab-3g" title="YouTube video player"
+	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	 allowfullscreen></iframe>
 	<button class="share" id="copy" onclick="copyText()">ПОШИРИТИ ТЕСТ</button>
 	</div>
 

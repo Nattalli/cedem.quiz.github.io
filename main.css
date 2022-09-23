@@ -42,7 +42,6 @@ body.second{
 @media screen and (max-width: 414px) {
 	.second-result-additional {
 		background-image: url("phone-3.png");
-		overflow: scroll;
 		margin-top: 0;
 		background-size: 95%;
 	}
@@ -63,7 +62,7 @@ body.second{
 		width: 81.6%;
 		flex-direction: column;
 		gap: 0;
-		margin: 130px auto 0;
+		/*margin: 130px auto 0;*/
 		text-align: center;
 	}
 }
@@ -624,6 +623,17 @@ img, .ant-image-mask {
 	color: #2E222F;
 }
 
+@media screen and (max-width: 414px) {
+	.result {
+		margin: 50px auto;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+		text-align: center;
+
+		color: #2E222F;
+	}
+}
 
 .result-text-final {
 	margin: 60px auto 15px;
@@ -637,24 +647,12 @@ img, .ant-image-mask {
 }
 
 @media screen and (max-width: 414px) {
-	.result {
-		margin: 50px auto;
-		font-weight: 600;
-		font-size: 24px;
-		line-height: 29px;
-		text-align: center;
-
-		color: #2E222F;
-	}
-}
-
-@media screen and (max-width: 414px) {
 	.result-text-final {
 		margin: 50px auto;
 		font-weight: 600;
 		font-size: 24px;
-		line-height: 29px;
 		text-align: center;
+		width: 321px;
 
 		color: #2E222F;
 	}
@@ -674,6 +672,7 @@ img, .ant-image-mask {
 	.result-additional {
 		font-weight: 600;
 		font-size: 24px;
+		width: 321px;
 		line-height: 29px;
 		text-align: center;
 		margin: 13px auto;
