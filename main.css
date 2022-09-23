@@ -34,6 +34,7 @@ body.second{
 @media screen and (max-width: 414px) {
 	body.second {
 		background-image: url("phone-2.png");
+		background-attachment: fixed;
 		overflow: scroll;
 	}
 }
@@ -46,6 +47,7 @@ body.second{
 	.second-result-additional {
 		background-image: url("phone-3.png");
 		overflow: scroll;
+		background-attachment: fixed;
 		margin-top: 0;
 		background-size: 95%;
 	}
@@ -234,7 +236,7 @@ a {
 
 @media screen and (max-width: 414px) {
 	.quiz-list li{
-		width: 289px;
+		width: 321px;
 		height: 59px;
 		margin: 12px auto 0;
 		/*padding: 0;*/
@@ -268,12 +270,12 @@ a {
 		/*font-weight: 600;*/
 		font-size: 12px;
 		line-height: 15px;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 16px;
+		padding-right: 16px;
 
 		color: #2E222F;
 
-		width: 289px;
+		width: 321px;
 		height: 59px;
 
 		background: none;
@@ -300,7 +302,7 @@ a {
 		border-radius: 25.54px;
 		color: #fff;
 
-		width: 289px;
+		width: 321px;
 		height: 59px;
 	}
 }

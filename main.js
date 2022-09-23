@@ -364,7 +364,7 @@ function checkButton(elem) {
 			elem.style.width = '800px';
 			elem.style.height = '67px';
 		} else {
-			elem.style.width = '289px';
+			elem.style.width = '321px';
 			elem.style.height = '59px';
 		}
 
