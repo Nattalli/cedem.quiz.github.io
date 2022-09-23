@@ -34,8 +34,10 @@ body.second{
 @media screen and (max-width: 414px) {
 	body.second {
 		background-image: url("phone-2.png");
-		background-repeat: no-repeat;
 		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 }
 
