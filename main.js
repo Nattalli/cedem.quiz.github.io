@@ -361,8 +361,8 @@ function checkButton(elem) {
 		const isMobile = /Mobile|webOS|BlackBerry|IEMobile|MeeGo|mini|Fennec|Windows Phone|Android|iP(ad|od|hone)/i.test(navigator.userAgent);
 
 		if (!isMobile) {
-			elem.style.width = '800px';
-			elem.style.height = '67px';
+			elem.style.width = '654';
+			elem.style.height = '54px';
 		} else {
 			elem.style.width = '321px';
 			elem.style.height = '59px';
@@ -490,7 +490,7 @@ function showResults() {
 
 	const resultsTemplate = `
 	<div class="second-result-additional">
-	<div class="result">%message%</div>
+	<div class="result-text-final">%message%</div>
 	<div class="result-additional">Ось як усе буде 👇</div>
 	<video class="video" controls="controls" poster="">
 	   <source src="" type='video/ogg; codecs="theora, vorbis"'>
