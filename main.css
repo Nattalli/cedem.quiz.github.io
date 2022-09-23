@@ -14,7 +14,7 @@ body {
 	background-image: url("background.jpg");
 	background-attachment: fixed;
 	background-position: center;
-	/*background-size: cover;*/
+	background-size: cover;
 	overflow: visible;
 }
 
@@ -34,8 +34,8 @@ body.second{
 @media screen and (max-width: 414px) {
 	body.second {
 		background-image: url("phone-2.png");
-		background-attachment: fixed;
 		overflow: scroll;
+		background-size: contain;
 	}
 }
 
@@ -47,7 +47,6 @@ body.second{
 	.second-result-additional {
 		background-image: url("phone-3.png");
 		overflow: scroll;
-		background-attachment: fixed;
 		margin-top: 0;
 		background-size: 95%;
 	}
