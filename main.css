@@ -21,6 +21,7 @@ body {
 @media screen and (max-width: 414px) {
 	body {
 		background-image: url("page_1.png");
+		background-attachment: fixed;
 		overflow: scroll;
 	}
 }
@@ -65,7 +66,7 @@ body.second{
 		width: 81.6%;
 		flex-direction: column;
 		gap: 0;
-		margin: 175px auto 0;
+		margin: 130px auto 0;
 		text-align: center;
 	}
 }
@@ -85,7 +86,7 @@ body.second{
 		font-weight: 600;
 		font-size: 21px;
 		line-height: 26px;
-		top: 162px;
+		top: 140px;
 	}
 }
 
@@ -100,7 +101,7 @@ body.second{
 		font-weight: 600;
 		text-align: center;
 		color: #2E222F;
-		margin: 230px auto 57px;
+		margin: 220px auto 37px;
 
 		height: 68px;
 		font-size: 14px;
@@ -267,8 +268,8 @@ a {
 		/*font-weight: 600;*/
 		font-size: 12px;
 		line-height: 15px;
-		padding-left: 16px;
-		padding-right: 16px;
+		padding-left: 10px;
+		padding-right: 10px;
 
 		color: #2E222F;
 
@@ -277,7 +278,7 @@ a {
 
 		background: none;
 		border: none;
-		text-align: center;
+		text-align: left;
 		vertical-align: center;
 	}
 }
