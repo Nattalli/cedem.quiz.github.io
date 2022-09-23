@@ -18,16 +18,17 @@ body {
 	overflow: visible;
 }
 
-body.second{
-	background-image: url("background-2.png");
-}
-
 @media screen and (max-width: 414px) {
 	body {
 		background-image: url("page_1.png");
 		overflow: scroll;
 	}
 }
+
+body.second{
+	background-image: url("background-2.png");
+}
+
 
 @media screen and (max-width: 414px) {
 	body.second {
@@ -36,12 +37,25 @@ body.second{
 	}
 }
 
+.second-result-additional{
+}
+
+
+@media screen and (max-width: 414px) {
+	.second-result-additional {
+		background-image: url("phone-3.png");
+		overflow: scroll;
+		margin-top: 0;
+		background-size: 95%;
+	}
+}
+
 .content {
 	display: flex;
 	flex-direction: column;
 	gap: 75px;
 	width: 47.5%;
-	margin: 185px auto;
+	margin: 160px auto;
 	text-align: center;
 }
 
@@ -51,7 +65,7 @@ body.second{
 		width: 81.6%;
 		flex-direction: column;
 		gap: 0;
-		margin: 198px auto 0;
+		margin: 175px auto 0;
 		text-align: center;
 	}
 }
@@ -59,8 +73,8 @@ body.second{
 
 .start  {
 	font-weight: 600;
-	font-size: 64px;
-	line-height: 78px;
+	font-size: 40px;
+	line-height: 60px;
 	text-transform: uppercase;
 	color: #502751;
 }
@@ -69,9 +83,9 @@ body.second{
 	.start {
 		height: 44px;
 		font-weight: 600;
-		font-size: 36px;
-		line-height: 44px;
-		top: 198px;
+		font-size: 21px;
+		line-height: 26px;
+		top: 162px;
 	}
 }
 
@@ -86,7 +100,7 @@ body.second{
 		font-weight: 600;
 		text-align: center;
 		color: #2E222F;
-		margin: 190px auto 57px;
+		margin: 230px auto 57px;
 
 		height: 68px;
 		font-size: 14px;
@@ -153,7 +167,7 @@ a {
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 17px;
-		height: 102px;
+		height: auto;
 		margin: 22px auto 26px;
 		width: 85.6%;
 		color: #2E222F;
@@ -199,9 +213,10 @@ a {
 @media screen and (max-width: 414px) {
 	.quiz-list {
 		list-style-type: none;
-		width: 289px;
+		width: 321px;
 		margin-left: auto;
 		margin-right: auto;
+		top: 0;
 	}
 }
 
@@ -221,11 +236,11 @@ a {
 		width: 289px;
 		height: 59px;
 		margin: 12px auto 0;
+		/*padding: 0;*/
 
 		background: #6FC994;
 		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 		border-radius: 25.54px;
-		padding: 0;
 	}
 }
 
@@ -249,9 +264,11 @@ a {
 @media screen and (max-width: 414px) {
 	.quiz-list li button {
 		font-family: 'Montserrat', sans-serif;
-		font-weight: 600;
+		/*font-weight: 600;*/
 		font-size: 12px;
 		line-height: 15px;
+		padding-left: 16px;
+		padding-right: 16px;
 
 		color: #2E222F;
 
@@ -302,14 +319,57 @@ a {
 	width: 390px;
 	height: 54px;
 
-	margin: 0 auto;
+	margin: 50px auto;
 	border-radius: 25.54px;
 	box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 414px) {
 	.submit {
-		font-weight: 500;
+		font-weight: 400;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 32px;
+		line-height: 39px;
+		text-align: center;
+
+		color: #FFFFFF;
+
+		border: none;
+		display: block;
+
+		margin: 30px auto;
+		width: 231px;
+		height: 40px;
+
+		background: #55274F;
+		box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.25);
+		border-radius: 25.54px;
+	}
+}
+
+.submit-second {
+	background-color: #55274F;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 39px;
+	text-align: center;
+
+	border: none;
+	display: block;
+	width: 390px;
+	height: 54px;
+
+	margin: 50px auto;
+	border-radius: 25.54px;
+	box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 414px) {
+	.submit-second {
+		font-weight: 400;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 19px;
 		line-height: 23px;
@@ -320,7 +380,7 @@ a {
 		border: none;
 		display: block;
 
-		margin: 0 auto;
+		margin: 30px auto;
 		width: 231px;
 		height: 40px;
 
@@ -385,7 +445,8 @@ a {
 		line-height: 29px;
 		text-align: center;
 		color: #42B54A;
-		margin-top: 30px;
+		margin: 30px auto 4px;
+		width: 273px;
 	}
 }
 
@@ -393,7 +454,7 @@ a {
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 29px;
-	text-align: center;
+	text-align: left;
 	width: 1194px;
 	color: #000000;
 	margin: 15px auto 43px;
@@ -404,7 +465,7 @@ a {
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 15px;
-		text-align: center;
+		text-align: left;
 		width: 85.6%;
 		color: #000000;
 		margin: 4px auto 25px;
@@ -418,12 +479,17 @@ img.user-image {
 	margin-left: auto;
 	margin-right: auto;
 	gap: 30px;
+
+	width: 184px;
+	height: 184px;
 }
 
 @media screen and (max-width: 414px) {
 	img.user-image {
 		object-fit: contain;
 		display: block;
+		width: 112px;
+		height: 112px;
 		margin-top: 25px;
 		margin-left: auto;
 		margin-right: auto;
@@ -437,6 +503,9 @@ img, .ant-image-mask {
 	margin-left: auto;
 	margin-right: auto;
 	gap: 30px;
+
+	width: 184px;
+	height: 184px;
 }
 
 @media screen and (max-width: 414px) {
@@ -444,6 +513,8 @@ img, .ant-image-mask {
 		margin-top: 29px;
 		border-radius: 66px;
 		display: block;
+		width: 112px;
+		height: 112px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -453,7 +524,7 @@ img, .ant-image-mask {
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 29px;
-	text-align: center;
+	text-align: left;
 	width: 1194px;
 	margin: 10px auto;
 
@@ -462,7 +533,7 @@ img, .ant-image-mask {
 
 @media screen and (max-width: 414px) {
 	.commentary {
-		text-align: center;
+		text-align: left;
 		margin: 30px auto;
 		width: 85.6%;
 		font-weight: 500;
@@ -513,7 +584,7 @@ img, .ant-image-mask {
 		text-align: center;
 
 		color: #6FC994;
-		margin-top: 2px;
+		margin: 2px 27px 0 27px;
 	}
 }
 
@@ -601,7 +672,7 @@ img, .ant-image-mask {
 		margin: 25px auto 25px;
 		display: block;
 		text-align: center;
-		width: 85.6%;
+		width: 321px;
 		height: 216px;
 		background: #6FC994;
 		border-radius: 25.54px;
@@ -662,9 +733,9 @@ img, .ant-image-mask {
 
 @media screen and (max-width: 414px) {
 	.image-main {
-		margin: 83px auto 45px;
-		width: 247px;
-		height: 57px;
+		margin: 50px auto 45px;
+		width: 185px;
+		height: 42px;
 	}
 }
 
@@ -677,8 +748,8 @@ img, .ant-image-mask {
 @media screen and (max-width: 414px) {
 	.image-main-2 {
 		margin: 52px auto 45px;
-		width: 247px;
-		height: 57px;
+		width: 185px;
+		height: 42px;
 	}
 }
 
