@@ -34,8 +34,6 @@ body.second{
 @media screen and (max-width: 414px) {
 	body.second {
 		background-image: url("phone-2.png");
-		overflow: scroll;
-		background-size: contain;
 	}
 }
 
