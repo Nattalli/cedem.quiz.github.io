@@ -524,7 +524,7 @@ function showResults() {
 function copyText() {
 	// Get the text field
 	const copyText = `Я творець прямої демократії! Перевір, чи ви готові самостійно розпоряджатись податками за 
-	посиланням: place_for_link`;
+	посиланням: https://cedem.stormkit.dev/`;
 	navigator.clipboard.writeText(copyText);
 
 	var tooltip = document.getElementById("myTooltip");
