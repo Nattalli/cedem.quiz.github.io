@@ -495,7 +495,12 @@ function showResults() {
 	<iframe class="video" src="https://www.youtube.com/embed/nTFWIeab-3g" title="YouTube video player"
 	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 	 allowfullscreen></iframe>
-	<button class="share" id="copy" onclick="copyText()">ПОШИРИТИ ТЕСТ</button>
+	 <div class="tooltip">
+	<button class="share" id="copy" onclick="copyText()" onmouseout="outFunc()">
+		<span class="tooltiptext" id="myTooltip">Скопіювати</span>
+  		ПОШИРИТИ ТЕСТ
+  	</button>
+  	</div>
 	</div>
 
 	`;
@@ -518,6 +523,15 @@ function showResults() {
 
 function copyText() {
 	// Get the text field
-	let copyText = `Я творець прямої демократії! Перевір, чи ви готові самостійно розпоряджатись податками за 
+	const copyText = `Я творець прямої демократії! Перевір, чи ви готові самостійно розпоряджатись податками за 
 	посиланням: place_for_link`;
+	navigator.clipboard.writeText(copyText);
+
+	var tooltip = document.getElementById("myTooltip");
+	tooltip.innerHTML = "Успішно скопійовано";
+}
+
+function outFunc() {
+	var tooltip = document.getElementById("myTooltip");
+	tooltip.innerHTML = "Скопіювати посилання";
 }
