@@ -43,6 +43,7 @@ body.second{
 	.second-result-additional {
 		background: url("phone-3.png") no-repeat top center fixed;
 		margin-top: 0;
+		padding-top: 15px;
 		background-size: 95%;
 	}
 }
