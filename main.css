@@ -10,12 +10,10 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 
-	justify-content: center;
-	background-image: url("background.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	overflow: visible;
+	/*justify-content: center;*/
+	background: url("background.jpg") no-repeat top center;
+	background-size: 110%;
+	/*overflow: visible;*/
 }
 
 @media screen and (max-width: 414px) {
@@ -25,7 +23,8 @@ body {
 }
 
 body.second{
-	background-image: url("background-2.png");
+	background: url("background-2.png") no-repeat top center scroll;
+	background-size: cover;
 }
 
 
@@ -70,10 +69,11 @@ body.second{
 
 
 .start {
-	margin-top: 150px;
+	margin: 95px auto 10px auto;
+	width: 615px;
 	font-weight: 600;
-	font-size: 40px;
-	line-height: 50px;
+	font-size: 36px;
+	line-height: 44px;
 	text-transform: uppercase;
 	color: #502751;
 }
