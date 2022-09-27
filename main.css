@@ -24,7 +24,7 @@ body {
 }
 
 body.second{
-	background: url("background-2.png") no-repeat local top center;
+	background: url("background-2.png") no-repeat top center;
 	background-size: 110%;
 }
 
