@@ -234,7 +234,7 @@ const experts = [
 	},
 	{
 		'question': 6,
-		'expertCount': 3,
+		'expertCount': 1,
 		'info': [
 			{
 			'name': 'Ярина Вишенська',
@@ -283,10 +283,69 @@ const experts = [
 		}]
 	}
 ];
+const points = [
+	{
+		0: "0",
+		1: "1",
+		2: "2",
+	},
+	{
+		0: "2",
+		1: "2",
+		3: "1",
+		4: "0"
+	},
+	{
+		0: "2",
+		1: "2",
+		2: "2",
+		3: "0"
+	},
+	{
+		1: "1",
+		2: "1",
+		3: "2",
+		4: "0"
+	},
+	{
+		0: "2",
+		1: "2",
+		3: "0",
+		4: "1"
+	},
+	{
+		0: "2",
+		1: "1",
+		2: "1",
+		3: "0"
+	},
+	{
+		0: "2",
+		1: "2",
+		2: "1",
+		4: "0"
+	},
+	{
+		0: "2",
+		1: "1",
+		2: "0"
+	},
+	{
+		0: "2",
+		1: "0",
+		2: "1"
+	},
+	{
+		0: "2",
+		1: "1",
+		2: "2",
+		3: "0"
+	}
+]
 
 // test variables
 let score = 0;	// result
-let currentPoint = 0;	// question answer points
+let currentPoint = -1;	// question answer points
 let questionIndex = 0; 	// question number
 let addedPoints = false;
 
@@ -353,7 +412,8 @@ showQuestion();
 
 function checkButton(elem) {
 	if (addedPoints === false) {
-		currentPoint = elem.value;
+		let position = elem.value;
+		currentPoint = parseInt(points[questionIndex][position-1]);
 		elem.style.background = '#55274F';
 		elem.style.color = '#fff';
 		elem.style.boxShadow = '0 4px 4px rgba(0, 0, 0, 0.25)';
@@ -466,8 +526,13 @@ function showAdditionalInfo() {
 
 function checkAnswer() {
 
-	if(currentPoint !== 0){
-		score += parseInt(currentPoint);
+	if(currentPoint !== -1){
+		if (isNaN(currentPoint)){
+			score += 0;
+		}
+		else {
+			score += parseInt(currentPoint);
+		}
 		if (questionIndex !== questions.length - 1) {
 			questionIndex += 1;
 			currentPoint = 0;
@@ -506,15 +571,15 @@ function showResults() {
 	`;
 
 	let message;
-	if (score >= 10 && score <=16){
+	if (score >= 0 && score <=7){
 		message = "Вау, ви творець прямої демократії! Схоже, що навіть вже знаєте кому будете відраховувати 2% від " +
 			"вашого податку.";
 	}
-	else if (score > 16 && score <= 24) {
+	else if (score > 7 && score <= 14) {
 		message = "Ви однозначно легко приймаєте зміни, особиливо такі позитивні, як право розподіляти частину " +
 			"вашого податку самостійно.";
 	} else {
-		message = " А ви полюбляєте старовину… Витриману роками, але чи надійну? Вам варто розібратись чи " +
+		message = "А ви полюбляєте старовину… Витриману роками, але чи надійну? Вам варто розібратись чи " +
 			"традиційний спосіб розподілу податків справді надійний👇";
 	}
 	quizContainer.innerHTML = resultsTemplate
