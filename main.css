@@ -32,6 +32,7 @@ body.second{
 @media screen and (max-width: 414px) {
 	body.second {
 		background: url("phone-2.png") no-repeat top center scroll;
+		background-size: 100%;
 	}
 }
 
@@ -63,7 +64,7 @@ body.second{
 		width: 81.6%;
 		flex-direction: column;
 		gap: 0;
-		/*margin: 130px auto 0;*/
+		margin: 130px auto 0;
 		text-align: center;
 	}
 }
@@ -81,11 +82,12 @@ body.second{
 
 @media screen and (max-width: 414px) {
 	.start {
+		margin: 40px auto 30px;
 		height: 44px;
 		font-weight: 600;
+		width: 273px;
 		font-size: 21px;
 		line-height: 26px;
-		top: 140px;
 	}
 }
 
