@@ -17,7 +17,7 @@ body {
 	/*overflow: visible;*/
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	body {
 		background-image: url("page_1.png");
 	}
@@ -40,7 +40,7 @@ body.second{
 }
 
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.second-result-additional {
 		background: url("phone-3.png") no-repeat top center fixed;
 		margin-top: 0;
@@ -58,7 +58,7 @@ body.second{
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.content {
 		display: flex;
 		width: 81.6%;
@@ -80,7 +80,7 @@ body.second{
 	color: #502751;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.start {
 		margin: 40px auto 30px;
 		height: 44px;
@@ -98,7 +98,7 @@ body.second{
 	height: 120px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.info {
 		font-weight: 600;
 		text-align: center;
@@ -125,7 +125,7 @@ a {
 
 	color: #502751;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.counter {
 		font-weight: 500;
 		font-size: 24px;
@@ -144,7 +144,7 @@ a {
 	margin: 32px auto;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.quiz {
 		width: 85.6%;
 		gap: 0;
@@ -165,7 +165,7 @@ a {
 	color: #000000;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.title {
 		font-weight: 600;
 		font-size: 14px;
@@ -214,7 +214,7 @@ a {
 	margin-right: auto;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.quiz-list {
 		list-style-type: none;
 		width: 321px;
@@ -235,7 +235,7 @@ a {
 	padding: 0;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.quiz-list li{
 		width: 321px;
 		height: 59px;
@@ -267,7 +267,7 @@ a {
 	padding-right: 15px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.quiz-list li button {
 		font-family: 'Montserrat', sans-serif;
 		/*font-weight: 600;*/
@@ -298,7 +298,7 @@ a {
 	color: #fff;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.quiz-list li button:hover {
 		background: #55274F;
 		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -330,7 +330,7 @@ a {
 	box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.submit {
 		font-weight: 400;
 		font-family: 'Montserrat', sans-serif;
@@ -373,7 +373,7 @@ a {
 	box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.submit-second {
 		font-weight: 400;
 		font-family: 'Montserrat', sans-serif;
@@ -402,7 +402,7 @@ a {
 	color: #FFFFFF;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.submit.result {
 		margin: 43px auto 12px;
 		font-family: 'Montserrat', sans-serif;
@@ -418,7 +418,7 @@ a {
 	margin-top: 0;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.submit.main {
 		width: 277px;
 		height: 70px;
@@ -443,7 +443,7 @@ a {
 	text-align: center;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.interesting-info {
 		font-weight: 600;
 		font-size: 24px;
@@ -465,7 +465,7 @@ a {
 	margin: 15px auto 43px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.interesting-info.text {
 		font-weight: 400;
 		font-size: 12px;
@@ -489,7 +489,7 @@ img.user-image {
 	height: 184px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	img.user-image {
 		object-fit: contain;
 		display: block;
@@ -513,7 +513,7 @@ img, .ant-image-mask {
 	height: 184px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	img, .ant-image-mask {
 		margin-top: 29px;
 		border-radius: 66px;
@@ -536,7 +536,7 @@ img, .ant-image-mask {
 	color: #000000;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.commentary {
 		text-align: left;
 		margin: 30px auto;
@@ -559,7 +559,7 @@ img, .ant-image-mask {
 	margin-top: 8px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.user-name {
 		font-weight: 600;
 		font-size: 24px;
@@ -581,7 +581,7 @@ img, .ant-image-mask {
 	margin-top: 0;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.user-position {
 		font-weight: 500;
 		font-size: 16px;
@@ -603,7 +603,7 @@ img, .ant-image-mask {
 	color: #2E222F;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.result-text {
 		font-weight: 300;
 		font-size: 14px;
@@ -627,7 +627,7 @@ img, .ant-image-mask {
 	color: #2E222F;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.result {
 		margin: 50px auto;
 		font-weight: 600;
@@ -650,7 +650,7 @@ img, .ant-image-mask {
 	color: #2E222F;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.result-text-final {
 		margin: 50px auto;
 		font-weight: 600;
@@ -672,7 +672,7 @@ img, .ant-image-mask {
 	text-align: center;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.result-additional {
 		font-weight: 600;
 		font-size: 24px;
@@ -694,7 +694,7 @@ img, .ant-image-mask {
 	border-radius: 25.54px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.video {
 		margin: 25px auto 25px;
 		display: block;
@@ -726,7 +726,7 @@ img, .ant-image-mask {
 	box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.share {
 		font-family: 'Montserrat', sans-serif;
 		background-color: #55274F;
@@ -758,7 +758,7 @@ img, .ant-image-mask {
 	height: 61px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.image-main {
 		margin: 50px auto 45px;
 		width: 185px;
@@ -772,7 +772,7 @@ img, .ant-image-mask {
 	height: 61px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
 	.image-main-2 {
 		margin: 52px auto 45px;
 		width: 185px;
