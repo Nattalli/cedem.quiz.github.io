@@ -234,8 +234,26 @@ const experts = [
 	},
 	{
 		'question': 6,
-		'expertCount': 1,
+		'expertCount': 3,
 		'info': [
+			{
+				'name': 'Архієпископ Чернігівський і Ніжинський Євстратій (Зоря)',
+				'position': 'речник Київської митрополії УПЦ (ПЦУ)\n',
+				'imagePath': 'experts_images/Archiepiskop.jpg',
+				'comment': 'Благодійність – одна з головних біблійних чеснот. В Україні в умовах війни як ніколи' +
+					' стала активною та життєво потрібною волонтерська праця. Серед інших Православна церква України' +
+					' постійно надає гуманітарну допомогу нашим воїнам, людям по всій Україні, особливо в найбільш' +
+					' постраждалих від війни місцях.\n' +
+					'Запровадження відсоткової філантропії, коли кожен з нас зможе перерахувати частину свого' +
+					' податку на користь релігійної, громадської, благодійної оргінізації, буде додатковим стимулом' +
+					' підтримати неурядовий сектор, який є надійною опорою для країни.'
+			},
+			{
+				'name': 'Вахтанг Кіпіані',
+				'position': 'директор громадської організації «Історина правда»',
+				'imagePath': 'experts_images/Kipiani.jpg',
+				'comment': 'Підтримую! «Історична правда» чекає на цей закон!'
+			},
 			{
 			'name': 'Ярина Вишенська',
 			'position': 'керівниця благодійного фонду «Сильні»',
@@ -274,7 +292,7 @@ const experts = [
 		'expertCount': 1,
 		'info': [{
 			'name': 'Анна Ісічко',
-			'position': 'менеджерка проєктів ГО “Центр демократії та верховенства права”',
+			'position': 'координаторка проекту «Ініціатива секторальної підтримки громадянського суспільства України», ЦЕДЕМ',
 			'imagePath': 'experts_images/AnnaIsichko.png',
 			'comment': 'Це важливий механізм для підтримки громадянського суспільства. Він відкриває можливості,' +
 				' важливі для усвідомлення керування своїми податками, і дуже допоможе нам усім підтримувати саме ті' +
@@ -285,67 +303,67 @@ const experts = [
 ];
 const points = [
 	{
-		0: "0",
-		1: "1",
-		2: "2",
+		"0": "1",
+		"1": "5",
+		"2": "10",
 	},
 	{
-		0: "2",
-		1: "2",
-		3: "1",
-		4: "0"
+		"0": "10",
+		"1": "10",
+		"3": "5",
+		"4": "1"
 	},
 	{
-		0: "2",
-		1: "2",
-		2: "2",
-		3: "0"
+		"0": "10",
+		"1": "10",
+		"2": "10",
+		"3": "1"
 	},
 	{
-		1: "1",
-		2: "1",
-		3: "2",
-		4: "0"
+		"1": "1",
+		"2": "5",
+		"3": "10",
+		"4": "5"
 	},
 	{
-		0: "2",
-		1: "2",
-		3: "0",
-		4: "1"
+		"0": "10",
+		"1": "10",
+		"3": "1",
+		"4": "5"
 	},
 	{
-		0: "2",
-		1: "1",
-		2: "1",
-		3: "0"
+		"0": "10",
+		"1": "5",
+		"2": "1",
+		"3": "1"
 	},
 	{
-		0: "2",
-		1: "2",
-		2: "1",
-		4: "0"
+		"0": "10",
+		"1": "10",
+		"2": "1",
+		"4": "1"
 	},
 	{
-		0: "2",
-		1: "1",
-		2: "0"
+		"0": "10",
+		"1": "5",
+		"2": "1"
 	},
 	{
-		0: "2",
-		1: "0",
-		2: "1"
+		"0": "10",
+		"1": "1",
+		"2": "5"
 	},
 	{
-		0: "2",
-		1: "1",
-		2: "2",
-		3: "0"
+		"0": "10",
+		"1": "5",
+		"2": "10",
+		"3": "1"
 	}
 ]
 
 // test variables
 let score = 0;	// result
-let currentPoint = -1;	// question answer points
+let currentPoint = 0;	// question answer points
 let questionIndex = 0; 	// question number
 let addedPoints = false;
 
@@ -413,7 +431,16 @@ showQuestion();
 function checkButton(elem) {
 	if (addedPoints === false) {
 		let position = elem.value;
-		currentPoint = parseInt(points[questionIndex][position-1]);
+		currentPoint = parseInt(points[questionIndex][String(position-1)]);
+		if (questionIndex === 3){
+			currentPoint = parseInt(points[questionIndex][String(position)]);
+		}
+		if (questionIndex === 1 && position === "4"){
+			currentPoint = 1;
+		}
+		if (questionIndex === 4 && position === "4"){
+			currentPoint = 5;
+		}
 		elem.style.background = '#55274F';
 		elem.style.color = '#fff';
 		elem.style.boxShadow = '0 4px 4px rgba(0, 0, 0, 0.25)';
@@ -526,9 +553,14 @@ function showAdditionalInfo() {
 
 function checkAnswer() {
 
-	if(currentPoint !== -1){
+	if(currentPoint !== 0){
 		if (isNaN(currentPoint)){
-			score += 0;
+			if (questionIndex === 1){
+				score += 5;
+			}
+			else {
+				score += 1;
+			}
 		}
 		else {
 			score += parseInt(currentPoint);
@@ -570,12 +602,13 @@ function showResults() {
 
 	`;
 
+	console.log(score)
 	let message;
-	if (score >= 0 && score <=7){
+	if (score >= 70 && score <=100){
 		message = "Вау, ви творець прямої демократії! Схоже, що навіть вже знаєте кому будете відраховувати 2% від " +
 			"вашого податку.";
 	}
-	else if (score > 7 && score <= 14) {
+	else if (score > 40 && score <= 69) {
 		message = "Ви однозначно легко приймаєте зміни, особиливо такі позитивні, як право розподіляти частину " +
 			"вашого податку самостійно.";
 	} else {
